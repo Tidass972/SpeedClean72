@@ -7,11 +7,6 @@ class NavigationManager {
     constructor() {
         this.mobileMenuButton = document.getElementById('mobileMenu');
         this.desktopMenu = document.querySelector('.md\\:flex');
-        // Add null check for dropdown elements
-        if (!this.mobileMenuButton || !this.desktopMenu || this.dropdownTriggers.length === 0) {
-            console.error('Required navigation elements missing from DOM');
-            return;
-        }
         this.dropdownTriggers = document.querySelectorAll('.dropdown-trigger');
         this.initEventListeners();
     }
