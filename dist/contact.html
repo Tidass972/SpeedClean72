@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Contact - SpeedClean72</title>
+  <link rel="stylesheet" href="style.css">
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&family=Open+Sans:wght@400;600&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+  <meta name="description" content="Service professionnel de nettoyage à domicile et en entreprise. Méthodes certifiées, produits écologiques et équipements haute performance.">
+  <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/@emailjs/browser@3/dist/email.min.js"></script>
+  <script type="text/javascript">
+    (function() {
+      emailjs.init("VOTRE_CLE_PUBLIQUE");
+    })();
+  </script>
+</head>
+<body>
+  <nav class="navbar">
+    <img src="images/Logo 3.png" alt="Logo Speed Clean 72 - Nettoyage Professionnel" class="logo">
+    <button class="hamburger" aria-label="Menu">
+      <span></span>
+      <span></span>
+      <span></span>
+    </button>
+    <nav class="nav-menu">
+      <a href="index.html" class="nav-link">Accueil</a>
+      <a href="index.html#services" class="nav-link">Mes Services</a>
+      <a href="index.html#about" class="nav-link">À Propos</a>
+      <a href="contact.html" class="nav-link">Contact</a>
+    </nav>
+  </nav>
+
+  <main role="main">
+    <section class="contact-form-section">
+      <h1>Contactez-nous</h1>
+      <form id="contactForm" class="form-grid">
+        <div class="form-group">
+          <label for="name" class="form-label">Nom complet <span class="required-asterisk">*</span></label>
+          <input type="text" id="name" name="name" class="form-input" 
+                 placeholder="Jean Dupont" required>
+        </div>
+        
+        <div class="form-group">
+          <label for="email" class="form-label">Email <span class="required-asterisk">*</span></label>
+          <input type="email" id="email" name="email" class="form-input"
+                 placeholder="jean.dupont@exemple.com" required>
+        </div>
+        
+        <div class="form-group">
+          <label for="phone" class="form-label">Téléphone</label>
+          <input type="tel" id="phone" name="phone" class="form-input"
+                 placeholder="06 12 34 56 78">
+        </div>
+        
+        <div class="form-group full-width">
+          <label for="message" class="form-label">Message <span class="required-asterisk">*</span></label>
+          <textarea id="message" name="message" class="form-textarea" 
+                    rows="5" placeholder="Décrivez votre demande en détail..." required></textarea>
+        </div>
+        
+        <div class="form-group full-width consent-group">
+          <input type="checkbox" id="consent" name="consent" required>
+          <label for="consent" class="consent-label">
+            J'accepte que mes données soient utilisées pour traiter ma demande 
+            (conformément à notre <a href="/politique-confidentialite" class="privacy-link">politique de confidentialité</a>)
+          </label>
+        </div>
+        
+        <button type="submit" class="send-button">
+          <i class="fas fa-paper-plane button-icon"></i>
+          <span class="button-text">Envoyer ma demande</span>
+          <div class="button-loader" aria-hidden="true"></div>
+        </button>
+      </form>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="footer-main-content">
+      <div class="footer-grid">
+        <div class="footer-section">
+          <h4>Coordonnées</h4>
+          <div class="contact-info">
+            <p><i class="fas fa-map-marker-alt"></i> 72 Rue du Progrès, 72000 Le Mans</p>
+            <p><i class="fas fa-clock"></i> Lun-Sam : 7h-20h</p>
+            <p><i class="fas fa-phone-alt"></i><a href="tel:+33612345678"> 06 12 34 56 78</a></p>
+            <p><i class="fas fa-envelope"></i><a href="mailto:dorian.speedclean@gmail.com" class="email-link">dorian.speedclean@gmail.com</a></p>
+          </div>
+        </div>
+
+        <div class="footer-section">
+          <h4>Services Express</h4>
+          <ul class="footer-links">
+            <li><i class="fas fa-sparkle"></i>Nettoyage urgent</li>
+            <li><i class="fas fa-sparkle"></i>Décapage de sols</li>
+            <li><i class="fas fa-sparkle"></i>Nettoyage de gouttières</li>
+            <li><i class="fas fa-sparkle"></i>Nettoyage après déménagement</li>
+            <li><i class="fas fa-sparkle"></i>Nettoyage post-travaux</li>
+            <li><i class="fas fa-sparkle"></i>Nettoyage de parkings et garages</li>
+          </ul>
+        </div>
+
+        <div class="footer-section">
+          <h4>Zone d’intervention</h4>
+          <div class="footer-contact-info">
+            <p>J’interviens rapidement dans ces zones :</p>
+            <ul>
+              <li> 📍 Le Mans et ses environs (20 km)</li>
+              <li>📍 Allonnes, Coulaines, Yvré-l'Évêque, Arnage</li>
+            </ul>
+          </div>
+        </div>
+
+        <div class="footer-section">
+          <h4>Réseaux Sociaux</h4>
+          <div class="social-links">
+            <a href="#" class="social-button fb"><i class="fab fa-facebook-f"></i></a>
+            <a href="#" class="social-button insta"><i class="fab fa-instagram"></i></a>
+            <a href="#" class="social-button linkedin"><i class="fab fa-linkedin-in"></i></a>
+            <a href="#" class="social-button tiktok"><i class="fab fa-tiktok"></i></a>
+          </div>
+
+          <p> Cliquez et suivez-nous !</p> 
+          <p class="social-text">Ne ratez rien ! Rejoignez <strong>SPEEDCLEAN72 </strong>, votre expert en nettoyage au Mans.</p>
+        </div>
+        
+      </div>
+    </div>
+
+    <div class="footer-humor">
+      <p>Site propulsé par des hamsters entraînés 24h/24 <span class="hamster-wheel">🐹</span></p>
+    </div>
+
+    <div class="footer-bottom">
+      <p><i class="far fa-copyright"></i>2025 SpeedClean72 - Tous droits réservés</p>
+      <p>Création du site</p>
+      <p>Conçu avec passion par <strong>Debarieux David</strong> – Spécialiste en création de sites vitrine.</p>
+      <p><i class="fas fa-envelope"></i><a href="mailto:contact@speedclean72.fr" class="email-link">contact.debarieux@gmail.com</a></p>
+      <a href="#" class="back-to-top"><i class="fas fa-arrow-up"></i></a>
+    </div>
+  </footer>
+  <script src="script.js"></script>
+  <script src="contact.js"></script>
+</body>
+</html>
